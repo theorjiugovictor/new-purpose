@@ -8,7 +8,7 @@ const events = [
     title: 'International Women\'s Day Celebration',
     description: 'Join us for an evening of inspiration, connection, and community. Celebrate the incredible women shaping our world — in partnership with New Purpose Non-Profit.',
     time: '4:00 PM – 8:00 PM',
-    location: '6930 Mount Vernon St, Middletown OH 45044',
+    location: '5539 Eureka Dr, Hamilton Ohio',
     rsvp: 'RSVP via Zelle',
     contacts: [
       { name: 'Shiree', phone: '+1 (937) 566-9161' },
