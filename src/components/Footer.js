@@ -1,4 +1,5 @@
 import './footer.css';
+import logoImg from '../assets/logo.png';
 
 export function mountFooter(element) {
     const year = new Date().getFullYear();
@@ -8,10 +9,7 @@ export function mountFooter(element) {
         <div class="footer-grid">
           <div class="footer-brand">
             <a href="#" class="footer-logo" aria-label="New Purpose Home">
-              <svg class="footer-logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                <path d="M24 42s-18-10.5-18-22a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 11.5-18 22-18 22z" fill="#E8392A"/>
-              </svg>
-              <span class="footer-logo-text">new<strong>purpose</strong></span>
+              <img src="${logoImg}" alt="New Purpose Non-Profit" class="footer-logo-img" />
             </a>
             <p class="footer-desc">
               New Purpose Non-Profit Organization is a registered Ohio nonprofit (2025) dedicated to empowering children, women, and families through education, healthcare, and community programs.

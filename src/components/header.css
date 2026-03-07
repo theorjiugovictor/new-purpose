@@ -31,34 +31,23 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
     text-decoration: none;
 }
 
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    filter: drop-shadow(0 2px 4px rgba(232, 57, 42, 0.25));
+/* Logo image — white bg logo on dark header: invert to full white
+   On scrolled white header: show as-is (white bg merges, red shows) */
+.logo-img {
+    height: 52px;
+    width: auto;
+    /* On dark/transparent header: filter makes the whole logo white */
+    filter: brightness(0) invert(1);
+    transition: filter var(--transition-normal), height var(--transition-normal);
 }
 
-.logo-text {
-    font-family: var(--font-heading);
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: white;
-    letter-spacing: -0.5px;
-    transition: color var(--transition-fast);
-}
-
-.logo-text strong {
-    font-weight: 800;
-    color: white;
-}
-
-.header-inner.scrolled .logo-text,
-.header-inner.scrolled .logo-text strong {
-    color: var(--color-secondary);
+.header-inner.scrolled .logo-img {
+    /* On white header: show the real logo colours (white bg blends away) */
+    filter: none;
+    height: 46px;
 }
 
 /* Nav */
@@ -157,8 +146,9 @@
         padding: 1rem 0;
     }
 
-    .logo-text, .logo-text strong {
-        color: white;
+    .logo-img {
+        /* Mobile dark header — keep logo white */
+        filter: brightness(0) invert(1);
     }
 
     .bar {

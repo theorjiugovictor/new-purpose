@@ -21,19 +21,25 @@
 }
 
 .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
+    display: inline-flex;
     text-decoration: none;
     margin-bottom: 0.25rem;
 }
 
-.footer-logo-icon {
-    width: 36px;
-    height: 36px;
-    flex-shrink: 0;
+/* Footer logo — white bg image on dark background:
+   brightness(0) makes it black, invert(1) flips to white */
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    transition: opacity var(--transition-fast);
 }
 
+.footer-logo-img:hover {
+    opacity: 0.85;
+}
+
+/* keep stale rule name to avoid breaking anything */
 .footer-logo-text {
     font-family: var(--font-heading);
     font-size: 1.3rem;
