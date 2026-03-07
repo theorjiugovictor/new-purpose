@@ -1,8 +1,8 @@
 import './footer.css';
 
 export function mountFooter(element) {
-    const year = new Date().getFullYear();
-    element.innerHTML = `
+  const year = new Date().getFullYear();
+  element.innerHTML = `
     <div class="footer-top">
       <div class="footer-container container">
         <div class="footer-grid">
@@ -14,7 +14,7 @@ export function mountFooter(element) {
               <span class="footer-logo-text">new<strong>purpose</strong></span>
             </a>
             <p class="footer-desc">
-              New Purpose Non-Profit Organization is a registered Ohio nonprofit (2025) dedicated to empowering children, women, and families through education, healthcare, and community programs.
+              New Purpose Non-Profit Organization is a registered US nonprofit (2025) dedicated to empowering children, women, and families through education, healthcare, and community programs.
             </p>
             <p class="footer-tagline">"Give and Gain"</p>
             <div class="footer-socials">
@@ -56,7 +56,7 @@ export function mountFooter(element) {
             <ul class="footer-links footer-contact">
               <li>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                5539 Eureka Dr, Hamilton, Ohio
+                6930 Mount Vernon St, Middletown OH 45044
               </li>
               <li>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -74,7 +74,7 @@ export function mountFooter(element) {
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <p>&copy; ${year} New Purpose Non-Profit Organization. All rights reserved.</p>
-        <p>State of Ohio Registered Nonprofit &bull; Doc No: 202531803912</p>
+        <p>State of US Registered Nonprofit &bull; Doc No: 202531803912</p>
       </div>
     </div>
   `;

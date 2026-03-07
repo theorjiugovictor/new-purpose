@@ -1,13 +1,13 @@
 import './donate.css';
 
 export function mountDonate(element) {
-    element.innerHTML = `
+  element.innerHTML = `
     <div class="donate-wrapper">
       <div class="donate-panel donate-panel--give reveal">
         <div class="donate-panel-content">
           <span class="section-label">Give</span>
           <h2>Your Gift<br>Changes Lives</h2>
-          <p>Every donation — no matter the size — goes directly to supporting our programs: child education, healthcare access, and community building across Ohio.</p>
+          <p>Every donation — no matter the size — goes directly to supporting our programs: child education, healthcare access, and community building across the US.</p>
           <ul class="donate-list">
             <li>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -15,7 +15,7 @@ export function mountDonate(element) {
             </li>
             <li>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              State of Ohio registered nonprofit
+              US registered nonprofit
             </li>
             <li>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -71,19 +71,19 @@ export function mountDonate(element) {
     </div>
   `;
 
-    // Amount button toggle
-    element.querySelectorAll('.amount-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            element.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('amount-btn--active'));
-            btn.classList.add('amount-btn--active');
-        });
+  // Amount button toggle
+  element.querySelectorAll('.amount-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      element.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('amount-btn--active'));
+      btn.classList.add('amount-btn--active');
     });
+  });
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(el => {
-            if (el.isIntersecting) el.target.classList.add('visible');
-        });
-    }, { threshold: 0.1 });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) el.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
 
-    element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }

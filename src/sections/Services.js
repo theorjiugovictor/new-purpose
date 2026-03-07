@@ -1,29 +1,29 @@
 import './services.css';
 
 const programs = [
-    {
-        title: 'Child Education Support',
-        description: 'We provide tutoring, school supplies, learning resources, and mentorship programs to ensure every child has the educational foundation they need to succeed — no matter their background.',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
-        tag: 'Education'
-    },
-    {
-        title: 'Healthcare & Wellness',
-        description: 'We connect families to medical and therapeutic resources, support health literacy workshops, and help bridge gaps in access to quality healthcare and wellness services across Ohio.',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
-        tag: 'Health'
-    },
-    {
-        title: 'Community Building',
-        description: 'Through events, mentorship circles, family networking, and skill-building workshops, we create a strong, connected community where everyone belongs and everyone contributes.',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
-        tag: 'Community'
-    }
+  {
+    title: 'Child Education Support',
+    description: 'We provide tutoring, school supplies, learning resources, and mentorship programs to ensure every child has the educational foundation they need to succeed — no matter their background.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+    tag: 'Education'
+  },
+  {
+    title: 'Healthcare & Wellness',
+    description: 'We connect families to medical and therapeutic resources, support health literacy workshops, and help bridge gaps in access to quality healthcare and wellness services across the US.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
+    tag: 'Health'
+  },
+  {
+    title: 'Community Building',
+    description: 'Through events, mentorship circles, family networking, and skill-building workshops, we create a strong, connected community where everyone belongs and everyone contributes.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    tag: 'Community'
+  }
 ];
 
 export function mountServices(element) {
-    element.id = 'programs';
-    element.innerHTML = `
+  element.id = 'programs';
+  element.innerHTML = `
     <div class="services-container container">
       <div class="services-header text-center reveal">
         <span class="section-label">What We Do</span>
@@ -51,13 +51,13 @@ export function mountServices(element) {
     </div>
   `;
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(el => {
-            if (el.isIntersecting) {
-                el.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) {
+        el.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
 
-    element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }

@@ -1,8 +1,8 @@
 import './mission.css';
 
 export function mountMission(element) {
-    element.id = 'about';
-    element.innerHTML = `
+  element.id = 'about';
+  element.innerHTML = `
     <div class="mission-container container">
       <div class="mission-layout">
         <div class="mission-text reveal">
@@ -15,9 +15,9 @@ export function mountMission(element) {
             purpose and thrive within a caring community.
           </p>
           <p>
-            Incorporated in the State of Ohio in November 2025, we bring together volunteers,
+            Incorporated in the US in November 2025, we bring together volunteers,
             educators, healthcare advocates, and families to create lasting change in Hamilton
-            and across Ohio. Our motto, <em>"Give and Gain,"</em> reflects our conviction that
+            and across the US. Our motto, <em>"Give and Gain,"</em> reflects our conviction that
             serving others enriches every life involved.
           </p>
           <div class="mission-values">
@@ -67,7 +67,7 @@ export function mountMission(element) {
                 <span class="stat-desc">Core Programs</span>
               </div>
               <div class="stat-box">
-                <span class="stat-number">Ohio</span>
+                <span class="stat-number">US</span>
                 <span class="stat-desc">Based & Proud</span>
               </div>
               <div class="stat-box">
@@ -86,14 +86,14 @@ export function mountMission(element) {
     </div>
   `;
 
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(el => {
-            if (el.isIntersecting) {
-                el.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.15 });
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) {
+        el.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
 
-    element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }

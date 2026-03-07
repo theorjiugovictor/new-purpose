@@ -1,7 +1,7 @@
 import './contact.css';
 
 export function mountContact(element) {
-    element.innerHTML = `
+  element.innerHTML = `
     <div class="contact-container container">
       <div class="contact-header text-center reveal">
         <span class="section-label">Get in Touch</span>
@@ -55,8 +55,7 @@ export function mountContact(element) {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <div>
-                  <strong>Our Address</strong>
-                  <p>5539 Eureka Dr<br>Hamilton, Ohio</p>
+                  <p>6930 Mount Vernon St<br>Middletown, OH 45044</p>
                 </div>
               </div>
               <div class="contact-info-item">
@@ -86,7 +85,7 @@ export function mountContact(element) {
                 </div>
                 <div>
                   <strong>Incorporated</strong>
-                  <p>State of Ohio, November 2025<br>Document No: 202531803912</p>
+                  <p>State of US, November 2025<br>Document No: 202531803912</p>
                 </div>
               </div>
             </div>
@@ -104,27 +103,27 @@ export function mountContact(element) {
     </div>
   `;
 
-    // Simple form interaction
-    const form = element.querySelector('#contactForm');
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = form.querySelector('.form-submit');
-        btn.textContent = 'Message Sent!';
-        btn.style.background = '#16a34a';
-        btn.disabled = true;
-        setTimeout(() => {
-            btn.innerHTML = 'Send Message <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
-            btn.style.background = '';
-            btn.disabled = false;
-            form.reset();
-        }, 3000);
+  // Simple form interaction
+  const form = element.querySelector('#contactForm');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.form-submit');
+    btn.textContent = 'Message Sent!';
+    btn.style.background = '#16a34a';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = 'Send Message <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+      btn.style.background = '';
+      btn.disabled = false;
+      form.reset();
+    }, 3000);
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) el.target.classList.add('visible');
     });
+  }, { threshold: 0.1 });
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(el => {
-            if (el.isIntersecting) el.target.classList.add('visible');
-        });
-    }, { threshold: 0.1 });
-
-    element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }

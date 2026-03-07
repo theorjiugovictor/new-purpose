@@ -2,7 +2,7 @@ import './hero.css';
 import heroBg from '../assets/hero-bg.png';
 
 export function mountHero(element) {
-    element.innerHTML = `
+  element.innerHTML = `
     <div class="hero-background" style="background-image: url('${heroBg}')">
       <div class="hero-overlay"></div>
     </div>
@@ -11,8 +11,7 @@ export function mountHero(element) {
       <h1 class="hero-title animate-fade-up delay-1">
         Give. Gain.<br><span class="hero-title-accent">Transform Lives.</span>
       </h1>
-      <p class="hero-subtitle animate-fade-up delay-2">
-        We empower children, women, and families across Ohio through education,
+        We empower children, women, and families across the US through education,
         healthcare support, and community connection — because every life has purpose.
       </p>
       <div class="hero-actions animate-fade-up delay-3">
@@ -22,7 +21,7 @@ export function mountHero(element) {
       <div class="hero-trust animate-fade-up delay-4">
         <span class="hero-trust-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Ohio Registered Nonprofit
+          US Registered Nonprofit
         </span>
         <span class="hero-trust-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>

@@ -35,11 +35,24 @@
     text-decoration: none;
 }
 
-.logo-icon {
-    width: 40px;
-    height: 40px;
+.logo-image {
+    height: 300px;
+    /* Force an extremely large height to scale up the small graphic inside the SVG Canvas */
+    width: auto;
+    max-height: none;
+    object-fit: contain;
     flex-shrink: 0;
-    filter: drop-shadow(0 2px 4px rgba(232, 57, 42, 0.25));
+    margin-top: -85px;
+    /* Pull the logo up to hide the top transparent space */
+    margin-bottom: -85px;
+    /* Pull the logo down to hide bottom space so it doesn't stretch the navbar */
+    margin-left: -40px;
+    /* Pull left if needed */
+    transition: transform var(--transition-normal);
+}
+
+.logo:hover .logo-image {
+    transform: scale(1.05);
 }
 
 .logo-text {
@@ -157,7 +170,8 @@
         padding: 1rem 0;
     }
 
-    .logo-text, .logo-text strong {
+    .logo-text,
+    .logo-text strong {
         color: white;
     }
 
