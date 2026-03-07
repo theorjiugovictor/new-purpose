@@ -1,42 +1,63 @@
 import './services.css';
 
-const services = [
+const programs = [
     {
-        title: 'Therapeutic Support',
-        description: 'Personalized occupational, physical, and speech therapy designed to help every child reach their developmental milestones.',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.3.3 0 1 0 .2.3V4a1 1 0 0 1 1 1v5a5 5 0 0 1-5 5v0a5 5 0 0 1-5-5V5a1 1 0 0 1 1-1h.8z"/><path d="M8 19v3"/><path d="M16 19v3"/><path d="M12 15v3"/></svg>'
+        title: 'Child Education Support',
+        description: 'We provide tutoring, school supplies, learning resources, and mentorship programs to ensure every child has the educational foundation they need to succeed — no matter their background.',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+        tag: 'Education'
     },
     {
-        title: 'Inclusive Education',
-        description: 'Educational programs that adapt to learning styles, ensuring that every student has the tools and environment they need to succeed.',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>'
+        title: 'Healthcare & Wellness',
+        description: 'We connect families to medical and therapeutic resources, support health literacy workshops, and help bridge gaps in access to quality healthcare and wellness services across Ohio.',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
+        tag: 'Health'
     },
     {
-        title: 'Family Community',
-        description: 'A strong support network for parents and siblings, providing workshops, counseling, and community events.',
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+        title: 'Community Building',
+        description: 'Through events, mentorship circles, family networking, and skill-building workshops, we create a strong, connected community where everyone belongs and everyone contributes.',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+        tag: 'Community'
     }
 ];
 
 export function mountServices(element) {
+    element.id = 'programs';
     element.innerHTML = `
     <div class="services-container container">
-      <div class="services-header text-center">
+      <div class="services-header text-center reveal">
+        <span class="section-label">What We Do</span>
         <h2 class="section-title">Our Programs</h2>
         <div class="title-underline"></div>
-        <p class="section-subtitle">Comprehensive care tailored to individual needs.</p>
+        <p class="section-subtitle">Three pillars of support designed to uplift individuals, strengthen families, and build thriving communities.</p>
       </div>
-      
+
       <div class="services-grid">
-        ${services.map(service => `
-          <div class="service-card">
-            <div class="service-icon">${service.icon}</div>
-            <h3 class="service-title">${service.title}</h3>
-            <p class="service-description">${service.description}</p>
-            <a href="#" class="service-link">Learn More &rarr;</a>
+        ${programs.map((p, i) => `
+          <div class="service-card reveal reveal-delay-${i + 1}">
+            <div class="service-card-top">
+              <span class="service-tag">${p.tag}</span>
+              <div class="service-icon">${p.icon}</div>
+            </div>
+            <h3 class="service-title">${p.title}</h3>
+            <p class="service-description">${p.description}</p>
+            <a href="#contact" class="service-link">
+              Get Involved
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
           </div>
         `).join('')}
       </div>
     </div>
   `;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(el => {
+            if (el.isIntersecting) {
+                el.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    element.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
