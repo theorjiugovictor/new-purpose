@@ -20,6 +20,9 @@ export function mountMission(element) {
             and across the US. Our motto, <em>"Give and Gain,"</em> reflects our conviction that
             serving others enriches every life involved.
           </p>
+          <p>
+            <strong>Mission Statement:</strong> Our mission is to advance in inclusion, equity, education and independence for children and people with developmental disabilities, by enabling the individuals experience life at its optimum through accessible programs, comprehensive support services, and community advocacy. As a nonprofit organization, we are committed to empowering people with disabilities to achieve their full potential by promoting self-determination, enhancing quality of life, and fostering meaningful participation in all aspects of society. We work collaboratively with partners, families, and communities to remove barriers, expand opportunities, and build a more inclusive future for all.
+          </p>
           <div class="mission-values">
             <div class="value-item">
               <div class="value-icon">
