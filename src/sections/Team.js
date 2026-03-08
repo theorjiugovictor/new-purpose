@@ -12,37 +12,37 @@ const teamMembers = [
   {
     name: "Angeline Mbinglo",
     role: "President",
-    bio: "Angeline Mbinglo has an LLM (Masters of Advanced Legal Studies in Investment Laws in Africa). I am a parent to 5 children, so blessed to have a child of special needs amongst. I am currently employed as a nurse in the USA. I have over 3 years working experience in taking care of children and individuals with health issues and especially, developmental disabilities under the Ohio Department of Developmental Disability. I am a part of the team that pioneered in the creation of New Purpose Nonprofit Organization in Ohio USA.",
+    bio: "Angeline Mbinglo holds an LLM (Master of Advanced Legal Studies) in Investment Laws in Africa. As a mother of five, including a child with special needs, she brings deep personal understanding to her role. Currently employed as a registered nurse in the USA, Angeline has over three years of dedicated experience caring for individuals with developmental disabilities under the Ohio Department of Developmental Disabilities. Her passion and dedication were instrumental in pioneering the creation of the New Purpose Nonprofit Organization.",
     image: angelineImg
   },
   {
     name: "Shiree Haines",
     role: "Vice President",
-    bio: "My name is Shiree Haines. I have been married to my husband, Bryan, for nearly three years. Together, we have eight children—seven boys and one girl. Our family is dedicated to raising our children with a foundation of faith, guiding them to become compassionate and contributing members of society. I hold a degree in Educational Studies from Wilmington College, which I earned in 2021. I have four years of experience as an Intervention Specialist in a Cross Categorical classroom at a public school. I also work for Grace Academy as an Intervention Specialist, providing support for children with disabilities in their homes. Additionally, I serve as the Vice President on the team that established “New Purpose,” a nonprofit organization dedicated to raising awareness and educating others about disabilities.",
+    bio: "Shiree Haines serves as the Vice President of New Purpose. She holds a degree in Educational Studies from Wilmington College and brings years of valuable experience as an Intervention Specialist in both public school cross-categorical classrooms and at Grace Academy, where she provides in-home support for children with disabilities. Dedicated to her family and faith, she and her husband Bryan are raising their eight children to be compassionate, contributing members of society. Shiree is deeply committed to raising awareness and educating others about disabilities.",
     image: shireeImg
   },
   {
     name: "Joseph Osafo",
     role: "Administrative Advisor",
-    bio: "Joseph Osafo holds an MBA in Finance, and brings a wealth of experience in investment banking and risk management to his role as Administrative Advisor. Beyond his professional background, Joseph is fueled by an entrepreneurial drive and a deep-seated desire to help others—a mission he considers his life’s passion. Guided by his faith and commitment to his family, he strives to lead by example in both his personal and professional life. Joseph is proud to contribute his expertise toward the organization's goal of bringing hope and lasting change to the lives of many.",
+    bio: "Joseph Osafo holds an MBA in Finance and brings a wealth of experience in investment banking and risk management to his role as Administrative Advisor. Beyond his professional background, Joseph is fueled by an entrepreneurial drive and a deep-seated desire to help others—a mission he considers his life’s passion. Guided by his faith and commitment to his family, he strives to lead by example in both his personal and professional life, proudly contributing his expertise to bring hope and lasting change to the community.",
     image: josephImg
   },
   {
     name: "Prince Victor Orjiugo",
     role: "IT Coordinator",
-    bio: "Prince Victor Orjiugo is a dedicated IT professional who believes that behind every successful non-profit initiative is a secure, seamless, and scalable digital infrastructure. With a focus on resourceful innovation, he ensures that technology serves as a powerful multiplier for New Purpose Nonprofit organization’s mission.",
+    bio: "Prince Victor Orjiugo is a dedicated IT professional who believes that behind every successful non-profit initiative is a secure, seamless, and scalable digital infrastructure. With a focus on resourceful innovation, he ensures that technology serves as a powerful multiplier for New Purpose, bridging the gap between technical solutions and community impact.",
     image: princeImg
   },
   {
     name: "Azefor Nanga",
     role: "Africa's Program Manager",
-    bio: "Azefor Nanga - Africa’s program manager holds an MSc in Development Management and Governance. She has 6+ years working with vulnerable persons living with various forms of disability. Championing advocacy programs focusing on disability issues in Cameroon and beyond!",
+    bio: "Azefor Nanga serves as Africa’s Program Manager, holding an MSc in Development Management and Governance. She brings over six years of dedicated experience working with vulnerable individuals living with various forms of disabilities. Azefor is a passionate champion of advocacy programs, heavily focusing on disability awareness, inclusion, and empowerment initiatives in Cameroon and across the broader region.",
     image: azeforImg
   },
   {
     name: "Ibezim Uzoma Michael",
     role: "Africa's Assistant Program Manager",
-    bio: "Ibezim Uzoma Michael has a BSc in Government and Public Administration/Political Science. I am from the Eastern part of Nigeria and also a male stylist. Human development and stability in disability is what New Purpose Nonprofit organization has come to take care of.",
+    bio: "Ibezim Uzoma Michael holds a BSc in Government and Public Administration. Originally from the eastern part of Nigeria, he brings a diverse background to his role, including experience as an entrepreneur and stylist. Ibezim is deeply committed to human development and ensuring stability for people with disabilities, aligning perfectly with the core mission of New Purpose to empower and care for the community.",
     image: ibezimImg
   }
 ];
@@ -52,13 +52,13 @@ const commentedOutMembers = [
   {
     name: "Therese Vera FOMIN Kegni",
     role: "Accountant",
-    bio: "Therese Vera FOMIN Kegni, a dedicated accountant with a High School Diplomacy in Accounting and three years of studies in Business Management and Accounting, brings expertise and passion to her role at New purpose, supporting individuals with disabilities in Cameroon and Ohio. As the organization's Accountant, she will ensure financial transparency, accountability, and strategic growth through meticulous financial planning, reporting, and risk management. With my financial acumen and commitment to social impact, she will empower New purpose organization to maximize funding impact, build stakeholder trust, and drive lasting change.",
+    bio: "Therese Vera FOMIN Kegni is a dedicated accountant with extensive studies in Business Management and Accounting. She brings both expertise and passion to her role at New Purpose, supporting individuals with disabilities in Cameroon and Ohio. As the organization's Accountant, she ensures financial transparency, accountability, and strategic growth through meticulous financial planning, reporting, and risk management. With robust financial acumen and a strong commitment to social impact, Therese empowers the organization to maximize its funding impact and drive lasting change.",
     image: thereseImg
   },
   {
     name: "Kelly Mbenkum",
     role: "Communicative Representative",
-    bio: "My name is Kelly Mbenkum and I am the communicative representative of new purpose nonprofit organization. As a dedicated nursing graduate, I'm passionate about empowering individuals with disabilities in Cameroon. As the Communicative Representative of New Purpose, I'll leverage social media and storytelling to craft compelling messages highlighting our mission and impact. Engage with our community and stakeholders. Foster partnerships to amplify our reach. Share stories of hope and resilience.",
+    bio: "Kelly Mbenkum serves as the Communications Representative for New Purpose. As a dedicated nursing graduate, she is deeply passionate about empowering individuals with disabilities in Cameroon. In her role, Kelly leverages social media and storytelling to craft compelling messages that highlight the organization's mission and impact. She actively engages with the community, fosters strategic partnerships to amplify outreach, and shares powerful stories of hope and resilience.",
     image: kellyImg
   }
 ];
