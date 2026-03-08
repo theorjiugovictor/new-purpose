@@ -36,18 +36,9 @@
 }
 
 .logo-image {
-    height: 300px;
-    /* Force an extremely large height to scale up the small graphic inside the SVG Canvas */
+    height: 45px;
     width: auto;
-    max-height: none;
     object-fit: contain;
-    flex-shrink: 0;
-    margin-top: -85px;
-    /* Pull the logo up to hide the top transparent space */
-    margin-bottom: -85px;
-    /* Pull the logo down to hide bottom space so it doesn't stretch the navbar */
-    margin-left: -40px;
-    /* Pull left if needed */
     transition: transform var(--transition-normal);
 }
 

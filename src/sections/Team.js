@@ -29,7 +29,7 @@ const teamMembers = [
   },
   {
     name: "Prince Victor Orjiugo",
-    role: "Director of Digital Infrastructure",
+    role: "IT Coordinator",
     bio: "Prince Victor Orjiugo is a dedicated IT professional who believes that behind every successful non-profit initiative is a secure, seamless, and scalable digital infrastructure. With a focus on resourceful innovation, he ensures that technology serves as a powerful multiplier for New Purpose Nonprofit organization’s mission.",
     image: princeImg
   },
