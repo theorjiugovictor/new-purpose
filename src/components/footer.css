@@ -29,8 +29,8 @@
 }
 
 .footer-logo-icon {
-    width: 36px;
-    height: 36px;
+    height: 50px;
+    width: auto;
     flex-shrink: 0;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .footer-desc {
-    color: rgba(255,255,255,0.55);
+    color: rgba(255, 255, 255, 0.55);
     line-height: 1.7;
     font-size: 0.85rem;
     max-width: 320px;
@@ -71,12 +71,12 @@
 .social-link {
     width: 36px;
     height: 36px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     transition: background var(--transition-fast), color var(--transition-fast);
 }
 
@@ -97,7 +97,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1.25rem;
 }
 
@@ -108,13 +108,13 @@
 }
 
 .footer-links li {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.85rem;
     line-height: 1.5;
 }
 
 .footer-links a {
-    color: rgba(255,255,255,0.55);
+    color: rgba(255, 255, 255, 0.55);
     transition: color var(--transition-fast);
 }
 
@@ -137,9 +137,9 @@
 
 /* Bottom bar */
 .footer-bottom {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 1.25rem 0;
-    border-top: 1px solid rgba(255,255,255,0.07);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .footer-bottom-inner {
@@ -151,7 +151,7 @@
 }
 
 .footer-bottom p {
-    color: rgba(255,255,255,0.35);
+    color: rgba(255, 255, 255, 0.35);
     font-size: 0.8rem;
 }
 
