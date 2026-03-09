@@ -1,4 +1,5 @@
 import './style.css'
+import { inject } from '@vercel/analytics';
 import { mountHeader } from './components/Header.js';
 import { mountHero } from './sections/Hero.js';
 import { mountMission } from './sections/Mission.js';
@@ -26,6 +27,9 @@ document.querySelector('#app').innerHTML = `
     <footer id="footer" role="contentinfo"></footer>
   </div>
 `
+
+// Initialize Vercel Analytics
+inject();
 
 mountHeader(document.querySelector('#header'));
 mountHero(document.querySelector('#hero'));
