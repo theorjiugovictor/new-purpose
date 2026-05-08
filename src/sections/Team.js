@@ -12,7 +12,7 @@ const teamMembers = [
   {
     name: "Angeline Mbinglo",
     role: "President",
-    bio: "Angeline Mbinglo holds an LLM (Master of Advanced Legal Studies) in Investment Laws in Africa. As a mother of five, including a child with special needs, she brings deep personal understanding to her role. Currently employed as a registered nurse in the USA, Angeline has over three years of dedicated experience caring for individuals with developmental disabilities under the Ohio Department of Developmental Disabilities. Her passion and dedication were instrumental in pioneering the creation of the New Purpose Nonprofit Organization.",
+    bio: "Angeline Mbinglo holds an LLM (Master of Advanced Legal Studies) in Investment Laws in Africa. As a mother of five, including a child with special needs, she brings deep personal understanding to her role. Currently employed as a nurse in the USA, Angeline has over three years of dedicated experience caring for individuals with developmental disabilities under the Ohio Department of Developmental Disabilities. Her passion and dedication were instrumental in pioneering the creation of the New Purpose Nonprofit Organization.",
     image: angelineImg
   },
   {
